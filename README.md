@@ -53,3 +53,8 @@ python bids_fastsurfer.py /path/to/BIDS/dataset /path/to/output/folder/bids_fast
 This will output a bash command calling docker, with all paths and arguments already nice and ready to run.
 
 
+
+# WARNING
+
+FastSurfer for images of very high spatial resolution (<0.5mm) might crash due to GPU-memory issues. To circumvent this, bids_fastsurfer checks that the resolution in each direction is larger than 1mm. If not, it will **downsample** the data, which irremediably destroy information. Make sure you understand what this mean before using this tool.
+The downsampled data are store in derivatives_dir/sourcedata and have the `_resampled` suffix.
