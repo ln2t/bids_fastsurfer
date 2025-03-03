@@ -42,7 +42,7 @@ def write_dataset_description(output_dir):
         json.dump(description, f, indent=4)
 
 
-def ensure_min_resolution(image_path, derivatives_dir, target_resolution=(1.0, 1.0, 1.0)):
+def ensure_min_resolution(image_path, derivatives_dir, target_resolution=(0.5, 0.5, 0.5)):
     # Load the NIfTI image
     img = nib.load(image_path)
 
