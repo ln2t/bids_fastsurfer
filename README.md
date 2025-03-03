@@ -3,7 +3,7 @@
 Tool to create appropriate docker command to run fastsurfer from a BIDS dataset.
 Also ensure resolution is not too small for fastsurfer memory requirement. If too small (<1mm), resample the data first.
 
-This is a BIDS app, so it complies with the command line call struction: `bids_fastsurfer bids_dir derivatives_dir participant`. See Usage below for details.
+This is a BIDS app, so it complies with the command line call structure: `bids_fastsurfer bids_dir derivatives_dir participant`. See Usage below for details.
 
 # Usage
 
