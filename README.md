@@ -56,5 +56,5 @@ This will output a bash command calling docker, with all paths and arguments alr
 
 # WARNING
 
-FastSurfer for images of very high spatial resolution (<0.5mm) might crash due to GPU-memory issues. To circumvent this, bids_fastsurfer checks that the resolution in each direction is larger than 1mm. If not, it will **downsample** the data, which irremediably destroy information. Make sure you understand what this mean before using this tool.
+FastSurfer for images of very high spatial resolution (<0.5mm) might crash due to GPU-memory issues. To circumvent this, bids_fastsurfer checks that the resolution in each direction is larger than 0.5mm. If not, it will **downsample** the data, which irremediably destroy information. Make sure you understand what this mean before using this tool.
 The downsampled data are stored in derivatives_dir/sourcedata and have the `_resampled` suffix.
